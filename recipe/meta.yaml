@@ -19,13 +19,9 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - black
     - earthengine-api
-    - js2py
     - numpy
     - python >=3.6
-    - python-box
-    - requests
 
 test:
   imports:
@@ -35,13 +31,14 @@ test:
     - ee_extra.JavaScript
     - ee_extra.STAC
     - ee_extra.Spectral
+    - ee_extra.TimeSeries
 
 about:
   home: https://github.com/r-earthengine/ee_extra
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
-  summary: A ninja Python package behind rgee, rgeeExtra and eemont.
+  summary: A ninja python package that unifies the Google Earth Engine ecosystem.
   doc_url: https://ee-extra.readthedocs.io/
   dev_url: https://github.com/r-earthengine/ee_extra
 
