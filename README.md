@@ -7,7 +7,7 @@ Package license: Apache-2.0
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ee_extra-feedstock/blob/master/LICENSE.txt)
 
-Summary: A ninja Python package behind rgee, rgeeExtra and eemont.
+Summary: A ninja python package that unifies the Google Earth Engine ecosystem.
 
 Development: https://github.com/r-earthengine/ee_extra
 
