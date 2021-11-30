@@ -1,5 +1,5 @@
 {% set name = "ee_extra" %}
-{% set version = "0.0.7" %}
+{% set version = "0.0.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ec5d6cb9ee16c5f72e499baf7be48073e943e06df327908d1f0c49e402dd2137
+  sha256: 49bdce0598ce101bc4e1103e40773943478cbfdea34ffa34fed3c8a295980cdd
 
 build:
   number: 0
