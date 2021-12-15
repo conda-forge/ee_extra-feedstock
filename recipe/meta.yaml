@@ -20,15 +20,16 @@ requirements:
     - python >=3.6
   run:
     - earthengine-api
-    - numpy
     - python >=3.6
 
 test:
   imports:
     - ee_extra
+    - ee_extra.Apps
     - ee_extra.Image
     - ee_extra.ImageCollection
     - ee_extra.JavaScript
+    - ee_extra.QA
     - ee_extra.STAC
     - ee_extra.Spectral
     - ee_extra.TimeSeries
