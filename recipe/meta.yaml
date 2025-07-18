@@ -1,38 +1,36 @@
 {% set name = "ee_extra" %}
-{% set version = "0.0.15" %}
+{% set version = "2025.7.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 63f6334af747e1fe664f148343f1bad5156486c76f5266b93e8727d061abceeb
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ee_extra-{{ version }}.tar.gz
+  sha256: 623a920c67200dfe22482530d7af4db30992eb56f0507d25c7e7c8e6dca07c96
 
 build:
-  number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 0
 
 requirements:
   host:
+    - python >=3.8
+    - setuptools >=61.0
+    - wheel
     - pip
-    - python >=3.6
   run:
-    - earthengine-api
-    - python >=3.6
+    - python >=3.8
+    - earthengine-api >=1.5.24
 
 test:
   imports:
     - ee_extra
-    - ee_extra.Apps
-    - ee_extra.Image
-    - ee_extra.ImageCollection
-    - ee_extra.JavaScript
-    - ee_extra.QA
-    - ee_extra.STAC
-    - ee_extra.Spectral
-    - ee_extra.TimeSeries
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/r-earthengine/ee_extra
