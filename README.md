@@ -1,4 +1,4 @@
-About ee-extra-feedstock
+About ee_extra-feedstock
 ========================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ee_extra-feedstock/blob/main/LICENSE.txt)
@@ -31,53 +31,53 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-ee--extra-green.svg)](https://anaconda.org/conda-forge/ee-extra) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/ee-extra.svg)](https://anaconda.org/conda-forge/ee-extra) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/ee-extra.svg)](https://anaconda.org/conda-forge/ee-extra) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/ee-extra.svg)](https://anaconda.org/conda-forge/ee-extra) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-ee__extra-green.svg)](https://anaconda.org/conda-forge/ee_extra) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/ee_extra.svg)](https://anaconda.org/conda-forge/ee_extra) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/ee_extra.svg)](https://anaconda.org/conda-forge/ee_extra) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/ee_extra.svg)](https://anaconda.org/conda-forge/ee_extra) |
 
-Installing ee-extra
+Installing ee_extra
 ===================
 
-Installing `ee-extra` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `ee_extra` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `ee-extra` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `ee_extra` can be installed with `conda`:
 
 ```
-conda install ee-extra
-```
-
-or with `mamba`:
-
-```
-mamba install ee-extra
-```
-
-It is possible to list all of the versions of `ee-extra` available on your platform with `conda`:
-
-```
-conda search ee-extra --channel conda-forge
+conda install ee_extra
 ```
 
 or with `mamba`:
 
 ```
-mamba search ee-extra --channel conda-forge
+mamba install ee_extra
+```
+
+It is possible to list all of the versions of `ee_extra` available on your platform with `conda`:
+
+```
+conda search ee_extra --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search ee_extra --channel conda-forge
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search ee-extra --channel conda-forge
+mamba repoquery search ee_extra --channel conda-forge
 
-# List packages depending on `ee-extra`:
-mamba repoquery whoneeds ee-extra --channel conda-forge
+# List packages depending on `ee_extra`:
+mamba repoquery whoneeds ee_extra --channel conda-forge
 
-# List dependencies of `ee-extra`:
-mamba repoquery depends ee-extra --channel conda-forge
+# List dependencies of `ee_extra`:
+mamba repoquery depends ee_extra --channel conda-forge
 ```
 
 
@@ -122,17 +122,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating ee-extra-feedstock
+Updating ee_extra-feedstock
 ===========================
 
-If you would like to improve the ee-extra recipe or build a new
+If you would like to improve the ee_extra recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/ee-extra-feedstock are
+Note that all branches in the conda-forge/ee_extra-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
